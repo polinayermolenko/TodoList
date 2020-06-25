@@ -8,10 +8,10 @@ export default class TodoListItem extends Component {
 
     let classNames = 'todo-list-item';
     if (done) {
-      classNames += ' done'; 
+      classNames += ' done';
     }
 
-    if(important) {
+    if (important) {
       classNames += ' important';
     }
 
@@ -19,19 +19,19 @@ export default class TodoListItem extends Component {
       <span className={classNames}>
         <span
           className="todo-list-item-label"
-          onClick={ onToggleDone }>
+          onClick={onToggleDone}>
           {label}
         </span>
 
         <button type="button"
           className="btn btn-outline-success btn-sm float-right"
-          onClick={ onToggleImportant }>
+          onClick={onToggleImportant}>
           <span className="fa fa-exclamation" ></span>
         </button>
 
         <button type="button"
           className="btn btn-outline-danger btn-sm float-right"
-          onClick={ onDeleted }>
+          onClick={onDeleted}>
           <span className="fa fa-trash-o"></span>
         </button>
       </span>
